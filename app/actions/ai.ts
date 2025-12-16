@@ -60,11 +60,11 @@ export async function generateText(
     
     const text = response.text
 
-    if (!text) {
+    if (typeof text !== 'string' || !text) {
       throw new Error('No text generated from Gemini API response')
     }
 
-    return text!
+    return text
   } catch (error: any) {
     console.error('[AI] Error generating text with Gemini:', error)
     console.error('[AI] Error details:', {
@@ -121,11 +121,11 @@ export async function generateTranslation(
     
     const translatedText = response.text
 
-    if (!translatedText) {
+    if (typeof translatedText !== 'string' || !translatedText) {
       throw new Error('No translation generated from Gemini API response')
     }
 
-    return translatedText!
+    return translatedText
   } catch (error: any) {
     console.error('[AI Translation] Error generating translation with Gemini:', error)
     console.error('[AI Translation] Error details:', {
