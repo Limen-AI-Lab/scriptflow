@@ -100,6 +100,20 @@ npm start
 └── types/                # TypeScript type definitions
 ```
 
+## Deployment
+
+### GitHub & Vercel
+
+See detailed deployment guides:
+- [GitHub Setup Guide](./GITHUB_SETUP.md)
+- [Vercel Deployment Guide](./VERCEL_DEPLOY.md)
+- [Complete Deployment Guide](./DEPLOYMENT.md)
+
+Quick start:
+1. Create GitHub repository (see `GITHUB_SETUP.md`)
+2. Deploy to Vercel (see `VERCEL_DEPLOY.md`)
+3. Configure environment variables in Vercel Dashboard
+
 ## Technologies Used
 
 - Next.js 14 (App Router)
@@ -107,6 +121,6 @@ npm start
 - TypeScript
 - Tailwind CSS
 - Supabase (Database & Storage)
-- Google Gemini API
+- Google Gemini API (`@google/genai`)
 - Minimax T2S API
 
