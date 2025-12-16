@@ -97,3 +97,4 @@ CREATE POLICY "Allow authenticated write" ON scripts
   USING (auth.role() = 'authenticated');
 ```
 
+

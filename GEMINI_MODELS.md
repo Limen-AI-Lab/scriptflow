@@ -47,3 +47,4 @@ curl https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:ge
   -d '{"contents":[{"parts":[{"text":"Hello"}]}]}'
 ```
 
+

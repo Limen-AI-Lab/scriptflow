@@ -38,3 +38,4 @@ CREATE POLICY "Allow all operations for authenticated users" ON scripts
 --   USING (true)
 --   WITH CHECK (true);
 
+

@@ -12,3 +12,4 @@ CREATE POLICY "Allow public access to scripts" ON scripts
   USING (true)
   WITH CHECK (true);
 
+
