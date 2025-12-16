@@ -64,7 +64,7 @@ export async function generateText(
       throw new Error('No text generated from Gemini API response')
     }
 
-    return text as string
+    return text!
   } catch (error: any) {
     console.error('[AI] Error generating text with Gemini:', error)
     console.error('[AI] Error details:', {
@@ -125,7 +125,7 @@ export async function generateTranslation(
       throw new Error('No translation generated from Gemini API response')
     }
 
-    return translatedText as string
+    return translatedText!
   } catch (error: any) {
     console.error('[AI Translation] Error generating translation with Gemini:', error)
     console.error('[AI Translation] Error details:', {
